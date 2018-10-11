@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png" />
+  	<!-- Bootstrap y Jquery-->
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<title>Grades</title>
+	<style type="text/css">
+		body{
+		  background: #F2F7F2;
+		}
+
+		.fondo{
+		  background: #627C85;
+		}
+
+		.fondoPrincipal{
+		  background: white;
+		  padding-left: 30px;
+		  padding-right: 30px;
+		  height: 500px;
+		}
+	</style>
+	<script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyAl-e5thQQ9ecANqObAHmV4pteCtwcZlP0",
+	    authDomain: "quizingles-895c4.firebaseapp.com",
+	    databaseURL: "https://quizingles-895c4.firebaseio.com",
+	    projectId: "quizingles-895c4",
+	    storageBucket: "quizingles-895c4.appspot.com",
+	    messagingSenderId: "307973158127"
+	  };
+	  firebase.initializeApp(config);
+</script>
+	<script src="js/prueba.js"></script>
+</head>
+<body>
+	<div class="fondo text-center text-white col-12 py-5"><h1>Questions</h1></div>
+	<div class="container col-lg-8 col-md-8 col-12 fondoPrincipal">
+		<br><br>
+		<button id="subirDatos" onclick="preguntarDatos()" class="btn btn-primary">Solicitar</button>
+		<br><br>
+		<table class="table table-responsive table-bordered" id="tabla1">
+			    <thead>
+			        <tr>
+			            <th>Name</th>
+			            <th>Grade</th>
+			        </tr>
+			    </thead>
+			    <tbody>
+			        
+			    </tbody>
+			</table>
+	</div>
+
+	<footer><div class="fondo text-center text-white col-12 py-2 fixed-bottom"><h5>Keylor Navas report</h5></div></footer>
+
+</body>
+</html>
